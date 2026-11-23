@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shopping-pod
+spec:
+  containers:
+    - name: shopping-container
+      image: nginx:alpine
+      envFrom:
+        - configMapRef:
+            name: shopping-config

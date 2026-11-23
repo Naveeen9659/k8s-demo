@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shopping-config
+data:
+  STORE_NAME: "Naveen Shopping"
+  PAYMENT_MODE: "UPI"
+  MAINTENANCE_MODE: "false"
